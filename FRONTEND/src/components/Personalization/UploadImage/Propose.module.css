@@ -1,0 +1,193 @@
+.aboutFeature{
+  width: 80%;
+  text-align: center;
+}
+.message {
+  color: green; /* Change to red for error messages if needed */
+  font-weight: bold;
+  margin-top: 20px;
+}
+.personalizePage {
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #12111131;
+  border: 1px solid goldenrod;
+  margin: 20px;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.imageSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageGrid {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.mainImage {
+  width: 350px;
+  height: 350px;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mainImage:hover {
+  border-color: goldenrod;
+}
+
+.mainImage p {
+  text-align: center;
+  margin: 20px;
+  color: #6c757d;
+}
+.smallImages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.smallImage {
+  width: 70px;
+  height: 70px;
+  border: 2px dashed #ccc;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.smallImage:hover {
+  border-color: goldenrod;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.deleteBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.fileInput {
+  display: none;
+}
+
+.formSection {
+  flex: 1;
+}
+.formSection form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background-color: black;
+  color: rgb(112, 104, 104);
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: goldenrod;
+}
+
+.textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.button50 {
+  display: inline-block;
+  padding: 10px 50px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Michroma, sans-serif;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid goldenrod;
+  background: transparent;
+  color: goldenrod;
+  cursor: pointer;
+}
+
+.button50:hover {
+  background: rgba(218, 165, 32, 0.5);
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutFeature{
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .mainImage {
+    width: 250px;
+    height: 250px;
+  }
+  .smallImage {
+    width: 50px;
+    height: 50px;
+  }
+
+}

@@ -1,0 +1,95 @@
+#review {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 400px;
+    background: #d1ebff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    filter: blur(4px);
+    border-radius: 10px;
+  }
+  
+  .swiper-slide-active {
+    filter: blur(0px);
+    background: #fff;
+  }
+  
+  .testimonialBox {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    padding-top: 90px;
+    color: #999;
+  }
+  
+  .testimonialBox .content p {
+    font-size: 16px;
+    color: black;
+  }
+  
+  .testimonialBox .quote {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    opacity: 0.2;
+    width: 80px;
+  }
+  
+  .testimonialBox .details {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .testimonialBox .details .imgBx {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  
+  .testimonialBox .details .imgBx img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .testimonialBox .details h3 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #2196f3;
+    line-height: 1.1em;
+  }
+  
+  .testimonialBox .details h3 span {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .swiper-slide-shadow-left .swiper-slide-shadow-coverflow,
+  .swiper-slide-shadow-right .swiper-slide-shadow-coverflow {
+    background-image: none;
+  }

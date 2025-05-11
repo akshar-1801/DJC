@@ -1,0 +1,128 @@
+/* Search.module.css */
+@keyframes slideSearchWindow {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.searchModal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Glassy effect */
+    transform: translateY(100%);
+    animation: slideSearchWindow 0.5s ease forwards;
+    color: white;
+}
+
+.formField {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    max-width: 1200px;
+    height: 50px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white; /* White text color */
+    background: transparent;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* White with transparency */
+    font-size: 0.8rem;
+}
+
+.closeBtn {
+    position: absolute;
+    font-size: 25px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white; /* White color for the close button */
+}
+
+.searchResultContent {
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+}
+
+.startMsg {
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.7); /* White with transparency */
+}
+
+.searchResults {
+    height: calc(100vh - 110px);
+    overflow: auto;
+    margin: 20px 0;
+}
+
+.searchResultItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    color: white; /* White text for items */
+}
+
+.imageContainer {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prodDetails {
+    overflow: hidden;
+}
+
+.name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: white; /* White color for product name */
+}
+
+.desc {
+    font-size: 14px;
+    line-height: 1;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.7); /* White with transparency for description */
+}

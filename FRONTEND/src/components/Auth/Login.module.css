@@ -1,0 +1,104 @@
+.loginPage {
+  background: radial-gradient(#221f00, #000000); /* Light golden gradient */
+  color: #f5d062; /* Golden color for text */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.homeIcon {
+  font-size: 2rem;
+  color: #4b3f22;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.homeIcon:hover {
+  transform: scale(1.1);
+}
+
+.loginContainer {
+  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 50px 30px;
+  width: 90%;
+  max-width: 380px;
+  text-align: center;
+  position: relative;
+  animation: fadeInUp 1s ease-in-out;
+  overflow: hidden;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heading {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #f5d062;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  color: #d9d9d9;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+.googleLoginButton {
+  padding: 12px 30px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #1b1b1b;
+  background-color: #f5d062;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.googleLoginButton:hover {
+  background-color: #d4b03c;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .loginContainer {
+    width: 95%;
+    padding: 30px 20px;
+  }
+  
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  .googleLoginButton {
+    padding: 10px 20px;
+  }
+}

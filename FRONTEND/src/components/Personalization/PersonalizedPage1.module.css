@@ -1,0 +1,156 @@
+.Personalized{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 60px;
+}
+
+.Personalized::-webkit-scrollbar{
+  width: 0px;
+}
+
+.Personalized::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(135deg, 
+  rgba(255, 198, 52, 0.1) 0%, 
+  rgba(255, 198, 52, 0.05) 50%, 
+  rgba(255, 198, 52, 0.1) 100%);
+filter: blur(50px);
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    gap: 20px;
+}
+
+.title h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.btns{
+    display: flex;
+    gap: 30px;
+}
+.PersonalizedPage1 {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Michroma, sans-serif;
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+  .button50 {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Michroma, sans-serif;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid goldenrod;
+    background: transparent;
+    color: goldenrod;
+    cursor: pointer;
+  }
+  
+  .button50:hover {
+    background: rgba(218, 165, 32, 0.5);
+    color: #fff;
+  }
+
+  .button51 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Michroma, sans-serif;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid goldenrod;
+    background: rgba(218, 165, 32, 0.5);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .button51:hover {
+    background: transparent;
+    color: goldenrod;
+  }
+  
+
+  
+  .leftColumn {
+    flex: 1;
+    margin-right: 40px;
+  }
+  
+  .rightColumn {
+    flex: 1;
+  }
+  
+  .funnelContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .next{
+    width: 100%;
+    height: 500px;
+  }
+
+  @media (max-width: 768px) {
+    .PersonalizedPage1 {
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .btns {
+        gap: 10px;
+    }
+  
+    .leftColumn {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    /* Adjust the blur effect for smaller screens */
+    .PersonalizedPage1::before {
+      filter: blur(30px);
+    }
+  }
+  

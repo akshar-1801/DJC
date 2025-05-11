@@ -1,0 +1,114 @@
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    width: 100%;
+    position: sticky;
+    z-index: 3;
+    top: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filters .left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.filters .right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.filters select {
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* border-radius: 20px; */
+    width: 100%;
+    max-width: 150px;
+}
+
+.filters select:hover, .filters select:focus {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+.filters label {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+.filter-by-text {
+    display: none;  /* Hide by default for desktop */
+}
+
+@media (max-width: 925px) {
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 0.75rem;
+    }
+
+    .filter-by-text {
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .filters .left {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .filters .right {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .filters select {
+        width: 100%;
+        max-width: none;
+        font-size: 8px;
+        height: 36px;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .filters .left > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filters label {
+        margin-bottom: 3px;
+        font-size: 12px;  /* Slightly smaller font size */
+    }
+}

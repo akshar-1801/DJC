@@ -1,0 +1,99 @@
+.container {
+  height: 3000px;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 3000px;
+  width: 100%;
+  position: relative;
+}
+
+.canvas {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.textContainer {
+  position: sticky;
+  text-align: right;
+  top: 48px;
+  right: 5%;
+  width: 800px;
+  padding: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 8px;
+  float: right;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(8px);
+  transition: opacity 0.5s ease,
+              transform 0.5s ease,
+              filter 1.5s ease;
+}
+
+.paragraph {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(8px);
+  transition: opacity 0.5s ease,
+              transform 0.5s ease,
+              filter 1.5s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .textContainer {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem;
+    float: none;
+    text-align: left;
+    border-radius: 16px 16px 0 0;
+    transform: translateY(0);
+  }
+
+  .heading {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}

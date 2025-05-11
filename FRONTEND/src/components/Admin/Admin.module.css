@@ -1,0 +1,67 @@
+.ordersContainer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #1a1919;
+    min-height: 100vh;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    color: #4a7c59;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1;
+  }
+  
+  .ordersTable {
+    width: 100%;
+    overflow-x: auto;
+    font-size: 0.5rem;
+  }
+  
+  .paymentTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #515050;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: #0d0000;
+  
+  }
+  
+  .paymentTable th,
+  .paymentTable td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .paymentTable th {
+    background-color: #4a7c59;
+  }
+  
+  .paymentTable td ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .paymentTable td select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .pending {
+    background-color: #ffffff;
+  }
+  
+  .delivered {
+    background-color: #c3e6cb93;
+  }
+  
+  @media (max-width: 768px) {
+    .paymentTable th,
+    .paymentTable td {
+      padding: 10px;
+    }
+  }

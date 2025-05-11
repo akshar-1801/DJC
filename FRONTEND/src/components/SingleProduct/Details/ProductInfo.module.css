@@ -1,0 +1,121 @@
+/* ProductInfo.module.css */
+.productInfo {
+    margin-bottom: 30px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: normal;
+  }
+  
+  .jeweller, .type {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .pricing {
+    margin: 15px 0;
+    margin-bottom: 0px;
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .savings {
+    color: goldenrod;
+    font-weight: bold;
+  }
+  
+  .taxes {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .size {
+    margin: 20px 0;
+  }
+  
+  .size select {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .addToCart, .buyNow {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+/* ProductInfo.module.css */
+.size select {
+    appearance: none; 
+    background: rgba(218, 165, 32, 0.5);
+    color: #fff; 
+    border: 2px solid goldenrod; 
+    padding: 4px 10px; 
+    font-size: 12px; 
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+  .size select:focus {
+    border-color: goldenrod;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .button50 {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid goldenrod;
+    background: transparent;
+    color: goldenrod;
+    cursor: pointer;
+  }
+  
+  .button50:hover {
+    background: rgba(218, 165, 32, 0.5);
+    color: #fff;
+  }
+
+  .button51 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid goldenrod;
+    background: rgba(218, 165, 32, 0.5);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .button51:hover {
+    background: transparent;
+    color: goldenrod;
+  }
+  
+  

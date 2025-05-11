@@ -1,0 +1,241 @@
+#home {
+  height: 200vh;
+  width: 100%;
+  text-align: center;
+  font-family: Michroma, sans-serif;
+  color: white;
+  overflow: hidden; 
+  position: relative; 
+  box-sizing: border-box; 
+  background: linear-gradient(90deg, 
+  rgba(255, 197, 52, 0.2) 0%, 
+  rgba(255, 198, 52, 0.05) 50%, 
+  rgba(255, 198, 52, 0.2) 100%);
+}
+
+.main--container{
+  position: absolute;
+  display: flex;
+  max-width: 100%;
+  height: 100vh;
+  align-content: center;
+  align-items: center;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.main--container canvas{
+  max-width: 100%;
+  max-height: 100%;
+  background-color: transparent;
+}
+.main--title{
+  color: white;
+  font-size: 7em;
+  font-family: 'Rubik Glitch', cursive;
+  font-weight: 100;
+  width: 510px;
+  line-height: 90px;
+  transform: translateX(30%);
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.main--title.ended{
+  transform: translateX(0);
+  opacity: 1;
+  mix-blend-mode: soft-light;
+}
+
+.main--title.ended:after {
+  /* This value is the OPPOSITE color of our background */
+  color: rgb(0, 255, 255); 
+  
+}
+
+.logo-bg{
+  height: 100vh;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 100vh;
+}
+
+.logo-bg img{
+  position: absolute;
+  height: 1200px;
+  width: 1200px;
+  left: 50%;
+  top: 0px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  animation-delay: 4s; /* Delays the start of the animation */
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 0.5;
+      top: -100px;
+      height: 1000px;
+      width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+.main--title{
+  font-size: 5em;
+  line-height: 0.8em;
+}
+}
+.container{
+    width: 100%;
+    height: 200vh;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    z-index: 2;
+    background-image: linear-gradient(
+        to top, #000000 25%, transparent
+    );
+    
+}
+
+.container h1{
+    font-size: 4dvw;
+    margin-top: 30vh;
+    padding-bottom: 20px;
+}
+
+.container h3{
+    font-size: 1.5vw;
+    padding-left: 12dvw;
+    padding-right: 12dvw;
+    padding-bottom: 20px;
+}
+
+.button-74 {
+    background-color: #D9D9D9;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    box-shadow: #000000 4px 4px 0 0;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.5vw;
+    font-family: Michroma, sans-serif;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #000000 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.custom{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 80vh;
+  color: white;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  display: flex;
+}
+.diamond-cont {
+  width: 75%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  right: 0%;
+  z-index: -1;
+  top: 100px;
+}
+
+.diamond-cont canvas{
+  width: 75%;
+  /* right: 0%; */
+  background-color: #d9d9d900;
+}
+
+.custom .left{
+    padding: 100px;
+}
+.left h1{
+  margin: 0%;
+  margin-top: 50px;
+  font-size: 3em;
+}
+.left h3{
+  font-size: 2em;
+  padding: 0%;
+  padding-bottom: 20px;
+}
+.left p{
+  width: 50%;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  padding-bottom: 20px;
+}
+
+.left .button-74{
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .custom .left{
+    padding: 20px;
+  }
+  .left h1 {
+    margin: 0%;
+    margin-top: 50px;
+    font-size: 1.5em;
+  }
+  .left h3{
+    font-size: 1em;
+    padding: 0%;
+  }
+  .left p{
+    font-size: 0.8em;
+    width: 100%;
+  }
+  .diamond-cont {
+    width: 100%;
+    /* height: 100vh; */
+    overflow: hidden;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    left: 0%;
+    top: 40%;
+    z-index: -1;
+  }
+  
+  .diamond-cont canvas{
+    width: 25%;
+    background-color: #d9d9d900;
+    opacity: 0.3;
+  }
+}
