@@ -109,7 +109,7 @@ const DiamondRing = () => {
     } else {
       // Load the model and set it to context if not loaded
       new OBJLoader().load(
-        "src/assets/diamond_ring3.obj",
+        "/models/diamond_ring3.obj",
         (obj) => {
           setModel(obj); // Store the loaded model in the context
           addModelToScene(obj);

@@ -93,7 +93,7 @@ const Home = () => {
     loader.setDRACOLoader(dracoLoader);
     console.log("loaded the diamond");
 
-    loader.load("src/assets/diamond.glb", (gltf) => {
+    loader.load("/models/diamond.glb", (gltf) => {
       let sampler;
       gltf.scene.traverse((obj) => {
         if (obj.isMesh) {
@@ -131,7 +131,7 @@ const Home = () => {
       depthWrite: false,
       sizeAttenuation: true,
       alphaMap: new THREE.TextureLoader().load(
-        "src/assets/particle-texture.jpg",
+        "/models/particle-texture.jpg",
         (texture) => {
           texture.minFilter = THREE.LinearFilter;
           texture.generateMipmaps = false;

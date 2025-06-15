@@ -45,7 +45,7 @@ exports.verifyPayment = async (req, res) => {
     userEmail, // New field added for user's email
   } = req.body;
 
-  const razorpayKeySecret = "C8HOS1oqNPl9gms8WxKXnGVK"; // Replace with your actual Razorpay key secret
+  const razorpayKeySecret = process.env.RAZORPAY_KEY_SECRET; // Replace with your actual Razorpay key secret
 
   const hmac = crypto.createHmac("sha256", razorpayKeySecret);
   hmac.update(razorpay_order_id + "|" + razorpay_payment_id);

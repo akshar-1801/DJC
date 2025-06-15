@@ -42,7 +42,7 @@ function MainContent() {
   };
 
   const GoogleAuthWrapper = () => (
-    <GoogleOAuthProvider clientId="522736900594-495381hqv5ueu8ie1qgvhf5ji4kt2f1i.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="868257660500-lrs7fckunnm4bqnlpgqslq459rr8tchd.apps.googleusercontent.com">
       <Login setIsAuthenticated={setIsAuthenticated} />
     </GoogleOAuthProvider>
   );
